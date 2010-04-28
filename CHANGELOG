@@ -1,6 +1,13 @@
-h1=. sIBL_GUI For XSI - 2.1.1 - Stable
+h1=. sIBL_GUI For XSI - 3.0.0 - Alpha
 
 h2=. Change Log
+
+h3. 3.0.0 - Alpha
+
+* New Addon for sIBL_GUI 3 :
+** sIBL_GUI is not provided anymore with the Addon.
+** New preferences property with settings to define sIBL_GUI executable.
+** Shortcuts to useful sIBL_GUI related urls.
 
 h3. 2.1.1 - Stable
 
@@ -93,11 +100,11 @@ h3. 0.9.5
 h3. 0.9.4
 
 * sIBL_GUI can now directly connect to XSI with sIBL_GUI_XSI_Server Addon ! ( Was a real pain to do ! )
-* Improved Template with : 
-- Progress Bar. 
-- Large part of the Code in Object Model. ( Faster execution ) 
-- Physical Sun Shader. 
-- Use of XSI new Color Management. ( Don't forget to manually remove tonemapping nodes from your cameras if you have used previous releases of the Template ) 
+* Improved Template with :
+** Progress Bar.
+** Large part of the Code in Object Model. ( Faster execution )
+** Physical Sun Shader.
+** Use of XSI new Color Management. ( Don't forget to manually remove tonemapping nodes from your cameras if you have used previous releases of the Template ) 
 * Remote Connection Code, interface polishing, bugfix and improvements on sIBL_GUI.
 
 h3. 0.9.3

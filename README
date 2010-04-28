@@ -1,13 +1,13 @@
 - sIBL_GUI For XSI - Addon -
 
 - Installation -
-Extract and Install like an usual XSI Addon : XSI -> File - > Addon -> Install Addon. Another Addon is also available to connect directly sIBL_GUI to XSI : sIBL_GUI_XSI_Server
+Install like an usual XSI Addon : XSI -> File - > Addon -> Install Addon. Another Addon is also available to connect directly sIBL_GUI to XSI : sIBL_GUI_XSI_Server
 
 - Usage -
-sIBL_GUI For XSI menu entries are stored in Model -> Get -> Primitive -> Light. "sIBL_GUI For XSI" launches a small window with shortcuts for the next two menu entries. "Launch sIBL_GUI" starts sIBL_GUI. "Execute Loader Script" executes the Loader Script.
+sIBL_GUI For XSI menu entries are stored in Model -> Get -> Primitive -> Light. "sIBL_GUI_For_XSI_Preferences" launches a small window with settings for sIBL_GUI, you will need to define the path to sIBL_GUI executable here. "Launch sIBL_GUI" starts sIBL_GUI. "Execute Loader Script" executes the Loader Script.
 
 - About -
-sIBL_GUI And sIBL_Framework by Thomas Mansencal - 2008 / 2009
-Copyright (C) 2008 / 2009 - Thomas Mansencal - kelsolaar_fool@hotmail.com
+sIBL_GUI by Thomas Mansencal - 2008 - 2010
+Copyright (C) 2008 - 2010 - Thomas Mansencal - kelsolaar_fool@hotmail.com
 This Software Is Released Under Terms Of GNU GPL V3 License : http://www.gnu.org/licenses/
 http://my.opera.com/KelSolaar/
