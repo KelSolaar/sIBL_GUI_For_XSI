@@ -1,0 +1,11 @@
+.DS_Store
+.project
+.pydevproject
+.settings
+
+*.xsiaddon
+
+Addons/sIBL_GUI_For_XSI/netview_sIBL_GUI_For_XSI.txt
+Addons/sIBL_GUI_For_XSI/netview_sIBL_GUI_For_XSI.xml
+
+releases/
