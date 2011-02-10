@@ -4,7 +4,7 @@ h2=. Change Log
 
 h3. 3.0.0 - Alpha
 
-* New Addon for sIBL_GUI 3 :
+* New Addon for sIBL_GUI 3:
 ** sIBL_GUI is not provided anymore with the Addon.
 ** New preferences property with settings to define sIBL_GUI executable.
 ** Shortcuts to useful sIBL_GUI related urls.
@@ -100,7 +100,7 @@ h3. 0.9.5
 h3. 0.9.4
 
 * sIBL_GUI can now directly connect to XSI with sIBL_GUI_XSI_Server Addon ! ( Was a real pain to do ! )
-* Improved Template with :
+* Improved Template with:
 ** Progress Bar.
 ** Large part of the Code in Object Model. ( Faster execution )
 ** Physical Sun Shader.
