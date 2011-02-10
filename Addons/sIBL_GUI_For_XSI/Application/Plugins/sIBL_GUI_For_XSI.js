@@ -3,7 +3,7 @@
  *
  * MODIFY THIS AT YOUR OWN RISK
  *
- * @author 	Thomas Mansencal	kelsolaar_fool@hotmail.com
+ * @author 	Thomas Mansencal	thomas.mansencal@gmail.com
  * @version	3.0.0
  * @os		Windows
  * @tasklist 	Code Comment.
@@ -34,8 +34,8 @@ function XSILoadPlugin(in_reg)
 {
 	in_reg.Author = "Kel Solaar";
 	in_reg.Name = "sIBL_GUI_For_XSI_Plugin";
-	in_reg.Email = "kelsolaar_fool@hotmail.com";
-	in_reg.URL = "http://my.opera.com/KelSolaar/blog/";
+	in_reg.Email = "thomas.mansencal@gmail.com";
+	in_reg.URL = "http://www.thomasmansencal.com/blog/";
 	in_reg.Major = 3.00;
 	in_reg.Minor = 0;
 	
