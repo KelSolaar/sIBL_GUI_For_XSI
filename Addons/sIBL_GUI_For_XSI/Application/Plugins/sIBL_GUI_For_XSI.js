@@ -345,14 +345,14 @@ function sIBL_launchApplication()
 	{
 		if(sIBL_GUI_Path == "")
 		{
-			XSIUIToolkit.Msgbox("Please Define An Executable In sIBL_GUI_For_XSI_Preferences !", siMsgInformation, "sIBL_GUI | Information");
+			XSIUIToolkit.Msgbox("Please Define An Executable In sIBL_GUI_For_XSI_Preferences!", siMsgInformation, "sIBL_GUI | Information");
 			sIBL_deleteRequestedProperties("sIBL_GUI_For_XSI_Preferences");
 			var currentProperty = SIAddProp("sIBL_GUI_For_XSI_Preferences", "Scene_Root", siDefaultPropagation, null, null);
 			InspectObj(currentProperty(0));
 		}
 		else
 		{		
-			XSIUIToolkit.Msgbox("sIBL_GUI Path Is Invalid, Please Check sIBL_GUI Preferences !", siMsgCritical, "sIBL_GUI | Error");
+			XSIUIToolkit.Msgbox("sIBL_GUI Path Is Invalid, Please Check sIBL_GUI Preferences!", siMsgCritical, "sIBL_GUI | Error");
 		}
 		
 	}
