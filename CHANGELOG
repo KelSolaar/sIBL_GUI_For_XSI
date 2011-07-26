@@ -104,7 +104,7 @@ h3. 0.9.4
 ** Progress Bar.
 ** Large part of the Code in Object Model. ( Faster execution )
 ** Physical Sun Shader.
-** Use of XSI new Color Management. ( Don't forget to manually remove tonemapping nodes from your cameras if you have used previous releases of the Template ) 
+** Use of XSI new Color Management. ( Don't forget to manually remove tonemapping nodes from your cameras if you have used previous releases of the Template )
 * Remote Connection Code, interface polishing, bugfix and improvements on sIBL_GUI.
 
 h3. 0.9.3
@@ -133,6 +133,6 @@ h3. 0.9.0
 h2=. About
 
 sIBL_GUI by Thomas Mansencal - 2008 - 2011
-Copyright (C) 2008 - 2011 - Thomas Mansencal - "thomas.mansencal@gmail.com":mailto:thomas.mansencal@gmail.com 
-This Software Is Released Under Terms Of GNU GPL V3 License: "http://www.gnu.org/licenses/":http://www.gnu.org/licenses/ 
+Copyright (C) 2008 - 2011 - Thomas Mansencal - "thomas.mansencal@gmail.com":mailto:thomas.mansencal@gmail.com
+This Software Is Released Under Terms Of GNU GPL V3 License: "http://www.gnu.org/licenses/":http://www.gnu.org/licenses/
 "http://www.thomasmansencal.com/":http://www.thomasmansencal.com/
