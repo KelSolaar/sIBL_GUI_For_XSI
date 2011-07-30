@@ -382,7 +382,7 @@ function sIBL_executeLoaderScript()
  *
  * @param	{String}	pluginName "Current Plugin Name"
  * @param	{String}	pluginFileName "Current Plugin File Name"
- * @return	{string}	Return A String
+ * :return	{string}	Return A String
  */
 function sIBL_getPluginPath(pluginName, pluginFileName)
 {
@@ -413,7 +413,7 @@ function sIBL_getPluginPath(pluginName, pluginFileName)
  * sIBL_getRequestedPropertiesAsCollection.
  *
  * @param	{String}	propertyType "Requested Property."
- * @return	{XSICollection}	"Return A XSICollection."
+ * :return	{XSICollection}	"Return A XSICollection."
  */
 function sIBL_getRequestedPropertiesAsCollection(propertyType)
 {
@@ -472,7 +472,7 @@ function sIBL_deleteRequestedProperties(propertyType)
  * sIBL_getByClassIDAsCollection.
  *
  * @param	{String}	currentClassID "Requested Class ID."
- * @return	{XSICollection}	"Return A XSICollection."
+ * :return	{XSICollection}	"Return A XSICollection."
  */
 function sIBL_getByClassIDAsCollection(currentClassID)
 {
@@ -487,7 +487,7 @@ function sIBL_getByClassIDAsCollection(currentClassID)
  * sIBL_getCollectionAsStringArray.
  *
  * @param	{XSICollection}	currentCollection "Collection To Return As A String Array."
- * @return	{StringArray}	"Return A StringArray."
+ * :return	{StringArray}	"Return A StringArray."
  */
 function sIBL_getCollectionAsStringArray(currentCollection)
 {
@@ -501,7 +501,7 @@ function sIBL_getCollectionAsStringArray(currentCollection)
  * sIBL_getStringArrayAsCollection.
  *
  * @param	{StringArray}	currentStringArray "String Array To Return As A Collection."
- * @return	{XSICollection}	"Return A XSICollection."
+ * :return	{XSICollection}	"Return A XSICollection."
  */
 function sIBL_getStringArrayAsCollection(currentStringArray)
 {
