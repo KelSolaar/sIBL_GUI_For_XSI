@@ -188,7 +188,6 @@ function sIBL_GUI_For_XSI_Preferences_getApplicationButton_OnClicked()
 	}
 }
 
-
 /**
  * sIBL_GUI_For_XSI_Preferences_hdrlabsButton_OnClicked.
  */
