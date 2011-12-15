@@ -5,7 +5,7 @@ echo ----------------------------------------------------------------
 
 export PROJECT=/Users/KelSolaar/Documents/Developement/sIBL_GUI_For_XSI
 
-export RELEASES=$PROJECT/releases/
+export RELEASES=$PROJECT/releases
 export REPOSITORY=$RELEASES/repository
 
 #! Gathering folder cleanup.
