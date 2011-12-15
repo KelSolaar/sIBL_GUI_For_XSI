@@ -106,11 +106,11 @@ function sIBL_GUI_For_XSI_Preferences_DefineLayout(in_ctxt)
 
 	customPropertyLayout_layout.AddGroup("Online");
 	customPropertyLayout_layout.AddRow()
-	var getApplication_button = customPropertyLayout_layout.AddButton("getApplication_button", "Get sIBL_GUI ...");
+	var getApplication_button = customPropertyLayout_layout.AddButton("getApplication_button", "@ Get sIBL_GUI ...");
 	getApplication_button.SetAttribute(siUICY, 32)
-	var hdrlabs_button = customPropertyLayout_layout.AddButton("hdrlabs_button", "Visit HDRLabs ...");
+	var hdrlabs_button = customPropertyLayout_layout.AddButton("hdrlabs_button", "@ HDRLabs ...");
 	hdrlabs_button.SetAttribute(siUICY, 32)
-	var applicationThread_button = customPropertyLayout_layout.AddButton("applicationThread_button", "Visit sIBL_GUI Thread ...");
+	var applicationThread_button = customPropertyLayout_layout.AddButton("applicationThread_button", "@ R\&D Thread ...");
 	applicationThread_button.SetAttribute(siUICY, 32)
 	customPropertyLayout_layout.EndRow();
 	customPropertyLayout_layout.EndGroup();
