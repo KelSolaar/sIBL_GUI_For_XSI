@@ -71,11 +71,11 @@ function XSIUnloadPlugin(in_reg)
  */
 function sIBL_GUI_For_XSI_Preferences_Define(in_ctxt)
 {
-	var customProperty_property = in_ctxt.Source;
+	var sIBL_GUI_For_XSI_Preferences_property = in_ctxt.Source;
 
-	customProperty_property.AddParameter3("logo_siString", siString);
-	customProperty_property.AddParameter3("executablePath_siString", siString, Application.preferences.GetPreferenceValue("sIBL_GUI_For_XSI_Settings.executablePath_siString"));
-	customProperty_property.AddParameter3("loaderScriptPath_siString", siString, Application.preferences.GetPreferenceValue("sIBL_GUI_For_XSI_Settings.loaderScriptPath_siString"));
+	sIBL_GUI_For_XSI_Preferences_property.AddParameter3("Logo_siString", siString);
+	sIBL_GUI_For_XSI_Preferences_property.AddParameter3("Executable_Path_siString", siString, Application.preferences.GetPreferenceValue("sIBL_GUI_For_XSI_Settings.Executable_Path_siString"));
+	sIBL_GUI_For_XSI_Preferences_property.AddParameter3("Loader_Script_Path_siString", siString, Application.preferences.GetPreferenceValue("sIBL_GUI_For_XSI_Settings.Loader_Script_Path_siString"));
 	return true;
 }
 
@@ -86,34 +86,34 @@ function sIBL_GUI_For_XSI_Preferences_Define(in_ctxt)
  */
 function sIBL_GUI_For_XSI_Preferences_DefineLayout(in_ctxt)
 {
-	var customPropertyLayout_layout = in_ctxt.Source;
+	var sIBL_GUI_For_XSI_Preferences_propertyLayout = in_ctxt.Source;
 
-	customPropertyLayout_layout.Clear();
+	sIBL_GUI_For_XSI_Preferences_propertyLayout.Clear();
 
-	var logo_siControlBitmap = customPropertyLayout_layout.AddItem("logo_siString", "", siControlBitmap);
+	var Logo_siControlBitmap = sIBL_GUI_For_XSI_Preferences_propertyLayout.AddItem("Logo_siString", "", siControlBitmap);
 	var pluginPath = getPluginPath("sIBL_GUI_For_XSI_Plugin", "sIBL_GUI_For_XSI.js");
-	logo_siControlBitmap.SetAttribute(siUIFilePath, pluginPath + "/pictures/sIBL_GUI_For_XSI_Logo.bmp");
-	logo_siControlBitmap.SetAttribute(siUINoLabel, true);
+	Logo_siControlBitmap.SetAttribute(siUIFilePath, pluginPath + "/pictures/sIBL_GUI_For_XSI_Logo.bmp");
+	Logo_siControlBitmap.SetAttribute(siUINoLabel, true);
 
-	customPropertyLayout_layout.AddGroup("Settings");
-	var executablePath_siControlFilePath = customPropertyLayout_layout.AddItem("executablePath_siString", "sIBL_GUI Executable Path", siControlFilePath);
-	executablePath_siControlFilePath.SetAttribute(siUIOpenFile, true);
-	executablePath_siControlFilePath.SetAttribute(siUIFileMustExist, true);
-	var loaderScriptPath_siControlFilePath = customPropertyLayout_layout.AddItem("loaderScriptPath_siString", "Loader Script Path", siControlFilePath);
-	loaderScriptPath_siControlFilePath.SetAttribute(siUIOpenFile, true);
-	loaderScriptPath_siControlFilePath.SetAttribute(siUIFileMustExist, true);
-	customPropertyLayout_layout.EndGroup();
+	sIBL_GUI_For_XSI_Preferences_propertyLayout.AddGroup("Settings");
+	var Executable_Path_siControlFilePath = sIBL_GUI_For_XSI_Preferences_propertyLayout.AddItem("Executable_Path_siString", "sIBL_GUI Executable Path", siControlFilePath);
+	Executable_Path_siControlFilePath.SetAttribute(siUIOpenFile, true);
+	Executable_Path_siControlFilePath.SetAttribute(siUIFileMustExist, true);
+	var Loader_Script_Path_siControlFilePath = sIBL_GUI_For_XSI_Preferences_propertyLayout.AddItem("Loader_Script_Path_siString", "Loader Script Path", siControlFilePath);
+	Loader_Script_Path_siControlFilePath.SetAttribute(siUIOpenFile, true);
+	Loader_Script_Path_siControlFilePath.SetAttribute(siUIFileMustExist, true);
+	sIBL_GUI_For_XSI_Preferences_propertyLayout.EndGroup();
 
-	customPropertyLayout_layout.AddGroup("Online");
-	customPropertyLayout_layout.AddRow()
-	var getApplication_button = customPropertyLayout_layout.AddButton("getApplication_button", "@ Get sIBL_GUI ...");
-	getApplication_button.SetAttribute(siUICY, 32)
-	var hdrlabs_button = customPropertyLayout_layout.AddButton("hdrlabs_button", "@ HDRLabs ...");
-	hdrlabs_button.SetAttribute(siUICY, 32)
-	var applicationThread_button = customPropertyLayout_layout.AddButton("applicationThread_button", "@ R\&D Thread ...");
-	applicationThread_button.SetAttribute(siUICY, 32)
-	customPropertyLayout_layout.EndRow();
-	customPropertyLayout_layout.EndGroup();
+	sIBL_GUI_For_XSI_Preferences_propertyLayout.AddGroup("Online");
+	sIBL_GUI_For_XSI_Preferences_propertyLayout.AddRow()
+	var Get_Application_button = sIBL_GUI_For_XSI_Preferences_propertyLayout.AddButton("Get_Application_button", "@ Get sIBL_GUI ...");
+	Get_Application_button.SetAttribute(siUICY, 32)
+	var HDRlabs_button = sIBL_GUI_For_XSI_Preferences_propertyLayout.AddButton("HDRlabs_button", "@ HDRLabs ...");
+	HDRlabs_button.SetAttribute(siUICY, 32)
+	var Application_Thread_button = sIBL_GUI_For_XSI_Preferences_propertyLayout.AddButton("Application_Thread_button", "@ RD Thread ...");
+	Application_Thread_button.SetAttribute(siUICY, 32)
+	sIBL_GUI_For_XSI_Preferences_propertyLayout.EndRow();
+	sIBL_GUI_For_XSI_Preferences_propertyLayout.EndGroup();
 
 	return true;
 }
@@ -161,25 +161,25 @@ function sIBL_GUI_For_XSI_Preferences_Execute()
 // ************************************************************************************************
 
 /**
- * sIBL_GUI_For_XSI_Preferences_executablePath_siString_OnChanged.
+ * sIBL_GUI_For_XSI_Preferences_Executable_Path_siString_OnChanged.
  */
-function sIBL_GUI_For_XSI_Preferences_executablePath_siString_OnChanged()
+function sIBL_GUI_For_XSI_Preferences_Executable_Path_siString_OnChanged()
 {
-	Application.preferences.SetPreferenceValue("sIBL_GUI_For_XSI_Settings.executablePath_siString", PPG.executablePath_siString.Value);
+	Application.preferences.SetPreferenceValue("sIBL_GUI_For_XSI_Settings.Executable_Path_siString", PPG.Executable_Path_siString.Value);
 }
 
 /**
- * sIBL_GUI_For_XSI_Preferences_loaderScriptPath_siString_OnChanged.
+ * sIBL_GUI_For_XSI_Preferences_Loader_Script_Path_siString_OnChanged.
  */
-function sIBL_GUI_For_XSI_Preferences_loaderScriptPath_siString_OnChanged()
+function sIBL_GUI_For_XSI_Preferences_Loader_Script_Path_siString_OnChanged()
 {
-	Application.preferences.SetPreferenceValue("sIBL_GUI_For_XSI_Settings.loaderScriptPath_siString", PPG.loaderScriptPath_siString.Value);
+	Application.preferences.SetPreferenceValue("sIBL_GUI_For_XSI_Settings.Loader_Script_Path_siString", PPG.Loader_Script_Path_siString.Value);
 }
 
 /**
- * sIBL_GUI_For_XSI_Preferences_getApplication_button_OnClicked.
+ * sIBL_GUI_For_XSI_Preferences_Get_Application_button_OnClicked.
  */
-function sIBL_GUI_For_XSI_Preferences_getApplication_button_OnClicked()
+function sIBL_GUI_For_XSI_Preferences_Get_Application_button_OnClicked()
 {
 	if (XSIUtils.IsWindowsOS())
 		openUrl(WINDOWS_RELEASE_URL)
@@ -189,17 +189,17 @@ function sIBL_GUI_For_XSI_Preferences_getApplication_button_OnClicked()
 }
 
 /**
- * sIBL_GUI_For_XSI_Preferences_hdrlabs_button_OnClicked.
+ * sIBL_GUI_For_XSI_Preferences_HDRlabs_button_OnClicked.
  */
-function sIBL_GUI_For_XSI_Preferences_hdrlabs_button_OnClicked()
+function sIBL_GUI_For_XSI_Preferences_HDRlabs_button_OnClicked()
 {
 	openUrl(HDRLABS_URL)
 }
 
 /**
- * sIBL_GUI_For_XSI_Preferences_applicationThread_button_OnClicked.
+ * sIBL_GUI_For_XSI_Preferences_Application_Thread_button_OnClicked.
  */
-function sIBL_GUI_For_XSI_Preferences_applicationThread_button_OnClicked()
+function sIBL_GUI_For_XSI_Preferences_Application_Thread_button_OnClicked()
 {
 	openUrl(APPLICATION_THREAD_URL)
 }
@@ -311,8 +311,8 @@ function initializePreferencesProperty()
 	if (Application.Preferences.Categories("sIBL_GUI_For_XSI_Settings") == null)
 	{
 		preferencesProperty = ActiveSceneRoot.AddCustomProperty("sIBL_GUI_For_XSI_Settings", false);
-		preferencesProperty.AddParameter3("executablePath_siString", siString, "");
-		preferencesProperty.AddParameter3("loaderScriptPath_siString", siString, "");
+		preferencesProperty.AddParameter3("Executable_Path_siString", siString, "");
+		preferencesProperty.AddParameter3("Loader_Script_Path_siString", siString, "");
 		InstallCustomPreferences("sIBL_GUI_For_XSI_Settings", "sIBL_GUI_For_XSI_Settings");
 	}
 }
@@ -322,7 +322,7 @@ function initializePreferencesProperty()
  */
 function launchApplication()
 {
-	var executablePath = Application.preferences.GetPreferenceValue("sIBL_GUI_For_XSI_Settings.executablePath_siString");
+	var executablePath = Application.preferences.GetPreferenceValue("sIBL_GUI_For_XSI_Settings.Executable_Path_siString");
 	fileSystemObject = new ActiveXObject("Scripting.FileSystemObject");
 	if(fileSystemObject.FileExists(executablePath))
 	{
@@ -355,7 +355,7 @@ function launchApplication()
  */
 function executeLoaderScript()
 {
-	var loaderScriptPath = Application.preferences.GetPreferenceValue("sIBL_GUI_For_XSI_Settings.loaderScriptPath_siString");
+	var loaderScriptPath = Application.preferences.GetPreferenceValue("sIBL_GUI_For_XSI_Settings.Loader_Script_Path_siString");
 	fileSystemObject = new ActiveXObject("Scripting.FileSystemObject");
 	if(fileSystemObject.FileExists(loaderScriptPath))
 	{
