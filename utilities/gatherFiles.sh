@@ -3,7 +3,7 @@ echo ----------------------------------------------------------------
 echo sIBL_GUI For XSI - Files Gathering
 echo ----------------------------------------------------------------
 
-export PROJECT=/Users/KelSolaar/Documents/Developement/sIBL_GUI_For_XSI
+export PROJECT=/Users/KelSolaar/Documents/Development/sIBL_GUI_For_XSI
 
 export RELEASES=$PROJECT/releases
 export REPOSITORY=$RELEASES/repository

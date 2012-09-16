@@ -166,7 +166,7 @@ Changes
 0.9.0
 -----
 
--  Initial Release of sIBL_GUI For XSI
+-  Initial release of sIBL_GUI For XSI
 
 .. .about
 
