@@ -3,17 +3,17 @@ echo ----------------------------------------------------------------
 echo sIBL_GUI For XSI - Files Gathering
 echo ----------------------------------------------------------------
 
-export PROJECT=/Users/KelSolaar/Documents/Development/sIBL_GUI_For_XSI
+export PROJECT_DIRECTORY=$(cd $( dirname "${BASH_SOURCE[0]}" )/..; pwd)
 
-export RELEASES=$PROJECT/releases
-export REPOSITORY=$RELEASES/repository
+export RELEASES_DIRECTORY=$PROJECT_DIRECTORY/releases
+export REPOSITORY_DIRECTORY=$RELEASES_DIRECTORY/repository
 
 #! Gathering folder cleanup.
-rm -rf $REPOSITORY/*
+rm -rf $REPOSITORY_DIRECTORY/*
 
 #! Change Log gathering.
-cp $RELEASES/Change_Log.html $REPOSITORY/
+cp $RELEASES_DIRECTORY/Change_Log.html $REPOSITORY_DIRECTORY/
 
 #! Addon gathering.
 cd $PROJECT/Addons/
-zip -r $REPOSITORY/sIBL_GUI_For_XSI.zip sIBL_GUI_For_XSI.xsiaddon
+zip -r $REPOSITORY_DIRECTORY/sIBL_GUI_For_XSI.zip sIBL_GUI_For_XSI.xsiaddon
